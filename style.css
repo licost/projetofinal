@@ -1,0 +1,316 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #90ee90;
+
+}
+
+*{
+     box-sizing: border-box;
+}
+
+/* ------- HEADER ------- */
+
+.pt1 {
+background-color:#90ee90;
+ display:flex;
+ justify-content:space-between;
+ align-items: center;
+ padding: 0px 50px;
+ 
+ 
+}
+    
+.menu {
+display: flex;
+
+}
+
+.menu a { 
+    text-decoration: none;
+    padding: 23px;
+    color:black;
+    font-size: 18px; 
+    font-family: 'Roboto', sans-serif; 
+    text-align: center;
+}
+
+.menu a:hover{ 
+    background-color:#4ee44e;
+
+}
+
+.menu.botton{
+    font-size: 25px;
+    color:#0a5a0a;
+
+}
+    
+/*----CAPA----*/
+.capa{
+    background-image: url(../modelo1/terra.jpeg);
+    min-height: 100vh;
+    background-size: cover;
+    color:white; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.capa h1{
+    max-width: 500px;
+    font-size: 70px;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px black;
+}
+.capa h2{
+    max-width: 500px;
+    font-size: 30px;
+    margin-top: 0;
+    border-top:3px solid white;
+}
+.capa .botton{
+    border:1px solid black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+}
+.capa.botton:hover{
+    background-color:blue;
+    
+
+}
+/*--fim de capa--*/
+
+/*--PROJETO--*/
+
+.sobre-projeto{
+    display: flex ;
+    width: 50%;
+    margin:0 auto;
+    padding: 30px 0px 20px 0px;
+    background-color:#90ee90;
+    flex-wrap: wrap;
+}
+
+.video{
+    flex: 100%;
+    padding: 0px 50px;
+    
+}
+
+.video inframe{
+    width: 100%;
+   
+}
+
+.sobre-projeto{
+    flex: 50%;
+  
+}
+.sprojeto h1{
+    font-size: 30px;
+    text-align: center;
+   
+}
+
+.sprojeto p{
+    text-align:justify;
+    font-size: 25px;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    text-align:justify;
+  padding: 10px 30px 10px 30px;
+}
+
+.project{
+padding: 20px;
+float: left;
+
+}
+.pdois{
+    background-color: #90ee90;
+   
+}
+
+.projectdois{
+    position: relative;
+    float: left ;
+    width: 60%;
+   justify-content: center;
+   text-align: center;
+   margin-left: 250px;
+   margin-right:300px ;
+}
+   
+.pdois h1{
+    font-size: 50px;
+    text-align: justify;
+    color:black;
+    text-align: center;
+}
+
+.pdois h2{
+    font-size: 30px;
+    text-align: justify;
+    color:black;
+    text-align: center;
+}
+
+.pdois p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pdois img {
+    margin-bottom: auto ;
+    width: 80%;
+   
+}
+.project{
+    padding: 20px;
+    float: left;
+    
+    }
+    .ptres{
+        background-color: #90ee90;
+       
+    }
+    .ptres h1{
+        font-size: 50px;
+        text-align: justify;
+        color:black;
+        text-align: center;
+    }
+    
+    .ptres h2{
+        font-size: 30px;
+        text-align: justify;
+        color:black;
+        text-align: center;
+    }
+    
+    .ptres p{
+        text-align: justify;
+      margin-left:60px;
+      margin-top: 30px;
+    }
+       
+    .titu3 {
+        position: relative;
+        float: left ;
+        width: 100%;
+        align-items: center;
+        margin-right: 20px;
+      
+    }
+    
+    .ptres img{
+        padding: 0px 50px;
+    }
+
+.titu4{
+    font-size: 50px;
+    text-align: justify;
+    color:black;
+    text-align: center;
+}
+
+.ptfinal p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.ptfinal h2{
+    font-size: 30px;
+    text-align: justify;
+    color:black;
+    text-align: center;
+
+}
+    
+/*--Fim do Projeto--*/
+.fim{
+    background-color:rgb(99, 206, 50);
+    float:left;
+    width: 100%;
+}
+/*--Rodapé--*/
+.footer{
+    display: flex;
+    max-width: 100%;
+    margin:0 auto;
+    padding: 30px 0px 50px 0px;
+    background-color: green;
+    color: #ffffff;
+}
+/*--Fim Rodapé--*/
+
+/*-----Responsvidade-----*/
+@media(max-width:760px){
+    
+     /*--Header Responsivo--*/
+     .pt1{
+         flex-direction: column;
+         align-items:center;
+        padding: 0px;
+     }
+
+   .menu{
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+   }
+
+    .menu a{
+        padding:5px;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+ /*--display: none;--*//*--tira o menu--*/
+
+
+   /*--Projeto  Responsivo--*/
+
+.sobre-projeto{
+    flex-direction: column;
+}
+.video{
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+}
+
+.sprojeto{
+    padding: 20px;
+}
+
+.project{
+    flex-direction: column;
+    
+}
+
+
+.ptres{
+    flex-direction: column;
+    align-items: center;
+}
+.titu{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+}
